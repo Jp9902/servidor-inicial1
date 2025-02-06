@@ -21,7 +21,10 @@ res.end('Bem vindos ao server inicial 1!!')
 
 })
 
-
+//iniciando o servidor e escutando na porta especificada
+meuServidor.listen(port, hostname, () => {
+    console.log(`Servidor rodando em http://$(hostname):$(port)/`)
+})
 
 
 
